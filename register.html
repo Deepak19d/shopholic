@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_login.css">
+  <header><p class="slogan"> Think Feel 'n' Shop</p> </header>
+  <link rel="stylesheet" href="/normalise.css">
+</head>
+<body>
+
+  <!-------------------------Account page-->
+
+  <div class="account-page">
+    <span class="container">
+        <div class="col-2">
+          <img src="shopping2.jpg.png" width="60%">
+        </div>
+        
+        <center>   <div class="col-2">
+          <div class="form-container">
+            <div class="form-button">
+              <span onclick="login()">Login</span>
+              <span onclick="register()">Register</span>
+              <hr id="Indicator">
+            </div>
+            <form id="logform">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="button">Login</button><br>
+            <a href="">Forgot Password</a>
+            </form>
+            <form id="regform">
+              <input type="text" placeholder="Username">
+              <input type="email" placeholder="Email">
+              <input type="tel" placeholder="Contact Number">
+              <input type="password" placeholder="Password">
+              <button type="submit" class="button">Register</button>
+              </form>
+          </div>
+         </div>  </center>
+        
+          
+         </div>
+     </span>
+  </div>
+
+
+  <!---------------------------js-->
+
+  <script>
+    var Loginform=document.getElementById("logform");
+    var regform=document.getElementById("regform");
+    var Indicator=document.getElementById("Indicator");
+
+    function register()
+    {
+      Loginform.style.transform = "translateX(0px)";
+      regform.style.transform="translateX(0px)";
+      Indicator.style.transform="translateX(100px)";
+    }
+
+    function login()
+    {
+      Loginform.style.transform = "translateX(300px)";
+      regform.style.transform="translateX(300px)";
+      Indicator.style.transform = "translateX(0px)"
+    }
+  </script>
+
+  <footer class="footer">
+    <!-- <img class="logo" src="shopholoic.png" height="150px"> -->
+    <div class="inner-footer">
+      <div class="social-links">
+        <ul>
+          <img style="width:65px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinZgshxekaG8IEdXMjZJNMPLEgF_XZQ0YfvXfCMZABeIh-xt0Q_D1l0evlM-MtEFhvvgvScqAqmNYCK6ejE59qS-jChTMgPPoyBMEXauW1lylp0a1xx5uuQu_xWSdriNrqvtbqIz8eoxJoJWY1U2VR2y7zZD4kXTm8faXoDHhuO68ZJK7I7OySNMiF/s498/pom-bot.gif" width="7px" height="40px">
+          <li class="social-items"><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" height="25px"></a> </li>
+          <li class="social-items"><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3128/3128208.png" height="25px"></a> </li>
+          <li class="social-items"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" height="25px"></a> </li>
+          <li class="social-items"><a href="https://mail.google.com/mail/u/5/#inbox"><img src="https://cdn-icons-png.flaticon.com/512/482/482138.png" height="25px"></a> </li>
+        </ul>
+        
+
+      </div>
+      <div class="quick-links">
+        <ul>
+          <li class="quick-items"><a href="#">Home</a> </li>
+          <li class="quick-items"><a href="#">Tutorials</a> </li>
+          <li class="quick-items"><a href="#">Services</a> </li>
+          <li class="quick-items"><a href="#">About Us</a> </li>
+          <li class="quick-items"><a href="#">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="outer-footer">
+      copyright &copf; ShopHolic All rights Reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
